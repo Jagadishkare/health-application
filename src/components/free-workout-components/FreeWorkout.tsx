@@ -1,6 +1,6 @@
 import './free-workout.css'
 import { Link } from 'react-router-dom'
-import freeWorkoutObject from './free-workout-config.json'
+import {freeWorkout} from '../../appliaction.json'
 
 export default function FreeWorkout () {
  return( 
@@ -27,7 +27,7 @@ export default function FreeWorkout () {
          </div>
       </div>
       <div className="note">
-         <p className='note-description'><b>NOTE : </b>{freeWorkoutObject.note}</p>
+         <p className='note-description'><b>NOTE : </b>{freeWorkout.freeWorkoutNote}</p>
       </div>
     </>
  )   

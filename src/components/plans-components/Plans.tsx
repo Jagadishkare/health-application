@@ -1,6 +1,6 @@
 import './plan.css'
 import { Link } from "react-router-dom"
-import planObject from './plan-config.json'
+import {plans} from '../../appliaction.json'
 
 export default function Plans () {
     return (
@@ -26,7 +26,7 @@ export default function Plans () {
                     <h1>Silver membership</h1>
                 </div> 
             </div>
-            <p className='discount'><b>NOTE : </b>{planObject.discount}</p>
+            <p className='discount'><b>NOTE : </b>{plans.note}</p>
         </>
     )
 }

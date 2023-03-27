@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: auto auto;
     margin-left: 150px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .map-image{
     border: 2px solid black;

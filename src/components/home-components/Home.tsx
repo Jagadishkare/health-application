@@ -1,9 +1,9 @@
 import {Link} from 'react-router-dom'
 import './home.css'
-import homeObject from './partner-config.json'
 
 
 export default function Home () {
+
     return (
         <>
             <h1 className="welcome-title">WELCOME TO FIT FOR LIFE</h1>
@@ -15,9 +15,9 @@ export default function Home () {
             </nav>
             <h1 className='partners'>PARTNERS</h1>
             <div className="partner-cards">
-                <img className='partner-images' src={homeObject.cultFit} alt="" />
-                <img className='partner-images' src={homeObject.patanjali} alt="" />
-                <img className='partner-images' src={homeObject['health care']} alt="" />
+                <img className='partner-images' src="../../../public/cultfit.png" alt="" />
+                <img className='partner-images' src="../../../public/patanjali.png" alt="" />
+                <img className='partner-images' src="../../../public/health care.png" alt="" />
 
             </div>
         </>

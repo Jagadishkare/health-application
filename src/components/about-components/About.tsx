@@ -2,16 +2,17 @@ import './about.css'
 import InstagramIcon from '@mui/icons-material/Instagram';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import aboutObject from './about-config.json'
-
+import {about} from '../../appliaction.json'
 export default function About () {
+    
     return (
         <>
-            <p className='about-description'>{aboutObject.para}</p>
+            <h1 className='about-title'>ABOUT US</h1>
+            <p className='about-description'>{about.aboutParagraph}</p>
             <div className="about-card-container">
-                <img className="about-image1" src="/public/logo.jpg" alt="" />
-                <img className="about-image2" src="/public/fitness club.jpg" alt="" />
-                <img className="about-image3" src="/public/nutrition.png" alt="" />
+                <img className="about-image1" src="../../../public/logo.jpg" alt="" />
+                <img className="about-image2" src="../../../public/fitness club.jpg" alt="" />
+                <img className="about-image3" src="../../../public/nutrition.png" alt="" />
             </div>
             <h1 className='find-us' >FOLLOW US NOW HERE FOR ANY UPDATES</h1>
             <div className="social-media">
