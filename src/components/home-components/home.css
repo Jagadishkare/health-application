@@ -1,0 +1,50 @@
+.welcome-title{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 40px;
+    color: rgb(8, 2, 2);
+  }
+  .home-description{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 30px;
+    color: rgb(25, 9, 9);
+  }
+  .join-us{
+    height: 50px;
+    width: 200px;
+    margin-left: 550px;
+    background-color: rgb(66, 144, 144);
+    box-shadow : 10px 5px 10px
+  }
+  .join-us:hover{
+    background-color: rgb(41, 115, 115);
+  }
+  .sign-in{
+    height: 50px;
+    width: 200px;
+    margin-left: 30px;
+    background-color: rgb(66, 144, 144);
+    box-shadow : 10px 5px 10px
+  }
+  .sign-in:hover{
+    background-color: rgb(41, 115, 115);
+  }
+  .partners{
+    text-align: center;
+    margin-top: 20px;
+  }
+  .partner-cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 140px;
+  }
+  .partner-images{
+    height: 180px;
+    width: 220x;
+    border-radius: 15px;
+    box-shadow : 10px 5px 10px
+  }

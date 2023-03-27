@@ -1,0 +1,22 @@
+.plan-main-div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 80px;
+    margin-left: 200px;
+}
+.plan-img{
+    border-radius: 50%;
+}
+.plan-img:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+.discount{
+    margin-left: 400px;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 600;
+}
+.plan-title{
+    text-align: center;
+}

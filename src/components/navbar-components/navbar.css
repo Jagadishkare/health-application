@@ -1,0 +1,16 @@
+.navbar{
+    font-size: 18px;
+    font-weight: 600;
+    border: 2px solid black;
+    height: 50px;
+    background-color: cadetblue;
+    display:flex ;
+    justify-content: space-around;
+  }
+  .links{
+    text-decoration: none;
+    margin-top: 15px;
+  }
+  .links:hover{
+    color: red;
+  }

@@ -1,0 +1,31 @@
+.contact-title{
+    text-align: center;
+}
+.contact{
+    display: grid;
+    grid-template-columns: auto auto;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+.map-image{
+    border: 2px solid black;
+    border-radius: 25px;
+    box-shadow: black 10px 5px 10px;
+}
+.map-image:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+.img-tagline{
+    font-size: 20px;
+    font-weight: 600;
+}
+.address{
+    font-size: 18px;
+}
+.email{
+    font-size: 18px;
+}
+.contact-number{
+    font-size: 18px;
+}

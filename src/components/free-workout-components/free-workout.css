@@ -1,0 +1,35 @@
+.main-div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-top: 50px;
+    margin-left: 150px;
+}
+.workout-img{
+    height: 250px;
+    width: 300px;
+    box-shadow: black 10px 5px 10px;
+    border-radius: 35px;
+}
+.workout-img:hover{
+    transform: scale(1.2);
+    transition-duration: 1s;
+}
+.title{
+    text-align: center ;
+}
+.img-description{
+    margin-left: 100px;
+}
+.note-description{
+    margin-left: 110px;
+    font-size: 20px;
+    font-weight: 600;
+}
+.aerobics-title, .gym-title, .yoga-title{
+    text-align: center;
+}
+.aero-main-div{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-left: 200px;
+}
