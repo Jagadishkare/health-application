@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: auto auto;
     margin-left: 150px;
-    margin-top: 80px;
+    margin-top: 60px;
 }
 .map-image{
     border: 2px solid black;
@@ -13,8 +13,8 @@
     box-shadow: black 10px 5px 10px;
 }
 .map-image:hover{
-    transform: scale(1.2);
-    transition-duration: 1s;
+    transform: scale(1.1);
+    transition-duration: 0.5s;
 }
 .img-tagline{
     font-size: 20px;

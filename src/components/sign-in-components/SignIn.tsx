@@ -6,10 +6,10 @@ export default function SignIn() {
         <img src="/public/logo.jpg" alt="" className="logo" />
         <h1 className='heading'>SIGN-IN TO FIT FOR LIFE</h1>
         <form action="">
-            <label className="label" htmlFor="">EMAIL : </label>
-            <input className="inputs" placeholder="Enter email" type="email" /><br></br>
-            <label className="label" htmlFor="">PASSWORD : </label>
-            <input className="inputs" placeholder="Enter password" type="email" /><br />
+            <label className="label" htmlFor="email">EMAIL : </label>
+            <input className="inputs" name='email' placeholder="Enter email" type="email" /><br></br>
+            <label className="label" htmlFor="password">PASSWORD : </label>
+            <input className="inputs" name='password' placeholder="Enter password" type="password" /><br />
             <button className='buttons'>sign in</button><br />
             <button className='buttons'>forgot password</button>
         </form>

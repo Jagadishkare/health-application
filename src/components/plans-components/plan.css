@@ -9,7 +9,7 @@
 }
 .plan-img:hover{
     transform: scale(1.2);
-    transition-duration: 1s;
+    transition-duration: 0.5s;
 }
 .discount{
     margin-left: 400px;

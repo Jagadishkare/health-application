@@ -1,0 +1,18 @@
+{
+    "about" : {
+        "aboutParagraph" : "Welcome to our health web application, a comprehensive tool designed to help you achieve and maintain optimal health. Our application provides a range of features to support your health journey, customized nutrition plans, and exercise programs tailored to your individual needs.With our easy-to-use interface, you can easily log and track your progress, set goals.Our team of experienced health professionals is dedicated to supporting you every step of the way,providing guidance and support to help you achieve your health goals.We believe that achieving optimal health is a journey, and our health web application is designed to help you along the way.Thank you for choosing us as your partner in health."
+    },
+    "contact" : {
+        "address" : "#302, 3rd Floor, HM Towers, Magrath Road, Junction, Brigade Rd, Ashok Nagar, Bengaluru, Karnataka 560001",
+        "email1" : "agilepoint@gmail.com",
+        "email2" : "agilepointservices@gmail.com",
+        "contact" : "9686879645 / 5241369874",
+        "mapLink" : "https://www.google.com/maps/place/AgilePoint+Software+India+Pvt+Ltd./@12.9711618,77.6073543,15z/data=!4m6!3m5!1s0x3bae13ff8774db65:0xc9e7eeec34dfa5f7!8m2!3d12.9711618!4d77.6073543!16s%2Fg%2F11cmpy608j"
+    },
+    "freeWorkout" : {
+        "freeWorkoutNote" : "This page provides basic workout at home. For better workout session and nutrition please check the plans provided for your better experience." 
+    },
+    "plans" : {
+        "note" : "We are offering 10% discount for new joiners."
+    } 
+}
