@@ -1,5 +1,6 @@
 import { useRef} from 'react'
 import './join-us.css'
+import {url} from '../../appliaction.json'
 
 export default function JoinUs() {
 
@@ -7,6 +8,11 @@ export default function JoinUs() {
     const userPassword = useRef<HTMLInputElement>(null);
     const confirmPassword = useRef<HTMLInputElement>(null);
     let count = 0;
+
+    function postData (url : string, type : object) {
+        fetch(url, {method : "POST", body : JSON.stringify(type), headers : {"content-type" : "application/json"}})
+        .then(()=>{alert("WELCOME TO FIT FOR LIFE")});
+    }
 
     function handleNewUserDetails (event: React.FormEvent<HTMLFormElement>) {
 
@@ -20,10 +26,9 @@ export default function JoinUs() {
             alert("PLEASE PROVIDE YOUR DETAILS.....")
         }else{
             if(newUser.userEmail && newUser.userPassword && newUser.userPassword === confirmPassword.current?.value){
-            fetch("http://localhost:3000/users").then((response)=>response.json()).then((result)=>{
+            fetch(url.serverUrl).then((response)=>response.json()).then((result)=>{
                 if(result.length === 0){
-                    fetch("http://localhost:3000/users", {method : "POST", body : JSON.stringify(newUser), headers : {"content-type" : "application/json"}})
-                    .then(()=>{alert("WELCOME TO FIT FOR LIFE")});
+                    postData(url.serverUrl,newUser)
                 }else{
                     for(let i=0 ; i<result.length ; i++){
                         if(newUser.userEmail===result[i].userEmail){
@@ -31,8 +36,7 @@ export default function JoinUs() {
                         }
                     }
                     if(count === 0){
-                        fetch("http://localhost:3000/users", {method : "POST", body : JSON.stringify(newUser), headers : {"content-type" : "application/json"}})
-                        .then(()=>{alert("WELCOME TO FIT FOR LIFE")});
+                        postData(url.serverUrl,newUser)
                     } else{
                         alert("user already exists...try with other email...");
                         count = 0;
@@ -49,14 +53,20 @@ export default function JoinUs() {
             <img src="/public/logo.jpg" alt="" className="logo" />
             <h1 className='heading'>JOIN TO FIT FOR LIFE</h1>
             <form onSubmit={(event)=>handleNewUserDetails(event)}>
-                <label className="label" htmlFor="email">EMAIL : </label>
-                <input className="inputs" name='email' placeholder="Enter email" type="email" ref={userEmail}/><br></br>
+                <label className="label" htmlFor="email">
+                    EMAIL : 
+                    <input className="inputs" autoComplete='off' name='email' placeholder="Enter email" type="email" ref={userEmail}/><br />
+                </label>
 
-                <label className="label" htmlFor="password">PASSWORD : </label>
-                <input className="inputs" name='password' placeholder="Enter password" ref={userPassword} type="password" /><br />
+                <label className="label" htmlFor="email">
+                    PASSWORD : 
+                    <input className="inputs" autoComplete='off' name='password' placeholder="Enter password" type="password" ref={userPassword} /><br />
+                </label>
 
-                <label className="label" htmlFor="confirm-password">RE-ENTER PASSWORD : </label>
-                <input className="inputs" name='confirm-password' placeholder="Confirm Password" type="password" ref={confirmPassword} /><br />
+                <label className="label" htmlFor="email">
+                    RE-ENTER PASSWORD :  
+                    <input className="inputs" autoComplete='off' name='confirm-password' placeholder="Confirm Password" type="password" ref={confirmPassword} /><br />
+                </label>
                 <button className='buttons'>JOIN</button><br />
             </form>
         </>
