@@ -1,25 +1,17 @@
 import './contact.css'
-import {contact} from '../../appliaction.json'
+import Title from './title'
+import GoogleMap from './googleMap'
+import AddressDetails from './addressDetails'
 
 export default function Contact () {
      
     return(
         <>
-            <h1 className="contact-title">CONTACT US FOR ANY HELP</h1>
-            <h2 className="contact-title">ALWAYS READY TO HELP YOU</h2>
+            <Title/>
             <div className="contact">
-                <div className="map-card">
-                    <a href={contact.mapLink}><img className='map-image' src="../../../public/map.png" alt="" /></a>
-                    <p className='img-tagline'>WE ARE AVAILABLE HERE FOR YOUR SERVICE</p>
-                </div>
+                <GoogleMap/>
                 <div className="contact-details">
-                    <h2> ADDRESS : </h2>
-                    <p className='address'>{contact.address}</p>
-                    <h2> EMAIL : </h2>
-                    <p className="email">{contact.email1}</p>
-                    <p className="email">{contact.email2}</p>
-                    <h2>CONTACT :</h2>
-                    <p className="contact-number">{contact.contact}</p>
+                    <AddressDetails/>    
                 </div>
             </div>
         </>

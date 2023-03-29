@@ -1,38 +1,38 @@
-import './App.css'
-import Home from './components/home-components/Home'
-import Navbar from './components/navbar-components/Navbar'
+import './app.css'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
-import About from './components/about-components/About'
-import Contact from './components/contact-components/Contact'
-import Plans from './components/plans-components/Plans'
-import FreeWorkout from './components/free-workout-components/FreeWorkout'
-import SignIn from './components/sign-in-components/SignIn'
-import JoinUs from './components/join-us-comonents/JoinUs'
-import Gym from './components/free-workout-components/Gym'
-import Yoga from './components/free-workout-components/Yoga'
-import Aerobics from './components/free-workout-components/Aerobics'
+import Navbar from './components/navbar-components/navbar'
+import Home from './components/home-components/home'
+import About from './components/about-components/about'
+import Contact from './components/contact-components/contact'
+import Plans from './components/plans-components/plans'
+import FreeWorkout from './components/free-workout-components/freeWorkout'
+import SignIn from './components/sign-in-components/signIn'
+import JoinUs from './components/join-us-comonents/joinUs'
+import Gym from './components/free-workout-components/gym'
+import Yoga from './components/free-workout-components/yoga'
+import Aerobics from './components/free-workout-components/aerobics'
 
 function App() {
   return (
     <div className="App">
       <h1 className='title'>FIT FOR LIFE</h1>
         <Router>
-      <Navbar/>
-          <Routes>
-            <Route path='/' element={<Home/>}/>
-            <Route path='/about' element={<About/>}/>
-            <Route path='/contact' element={<Contact/>}/>
-            <Route path='/plans' element={<Plans/>}/>
-            <Route path='/freeWorkout' element={<FreeWorkout/>}/>
-            <Route path='/sign-in' element={<SignIn/>}/>
-            <Route path='/join-us' element={<JoinUs/>}/>
-            <Route path='/gym' element={<Gym/>}/>
-            <Route path='/yoga' element={<Yoga/>}/>
-            <Route path='/aerobics' element={<Aerobics/>}/>
-            <Route path='/platinum' element={<SignIn/>}/>
-            <Route path='/gold' element={<SignIn/>}/>
-            <Route path='/silver' element={<SignIn/>}/>
-          </Routes>
+          <Navbar/>
+            <Routes>
+              <Route path='/' Component={Home}/>
+              <Route path='/about' Component={About}/>
+              <Route path='/contact' Component={Contact}/>
+              <Route path='/plans' Component={Plans}/>
+              <Route path='/freeWorkout' Component={FreeWorkout}/>
+              <Route path='/sign-in' Component={SignIn}/>
+              <Route path='/join-us' Component={JoinUs}/>
+              <Route path='/gym' Component={Gym}/>
+              <Route path='/yoga' Component={Yoga}/>
+              <Route path='/aerobics' Component={Aerobics}/>
+              <Route path='/platinum' Component={SignIn}/>
+              <Route path='/gold' Component={SignIn}/>
+              <Route path='/silver' Component={SignIn}/>
+            </Routes>
         </Router>
     </div>
   )

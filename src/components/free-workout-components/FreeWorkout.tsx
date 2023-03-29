@@ -1,34 +1,19 @@
 import './free-workout.css'
-import { Link } from 'react-router-dom'
-import {freeWorkout} from '../../appliaction.json'
+import WorkoutCard from './workoutCard'
+import Title from '../contact-components/title'
+import Note from '../free-workout-components/note'
+
 
 export default function FreeWorkout () {
  return( 
     <>
-      <h1 className='title'>FREE WORKOUT FOR YOU</h1>
+      <Title/>
       <div className="main-div">
-         <div>
-            <nav>
-              <Link to='/gym' ><img className='workout-img' src="../../../public/gym workout.jpg" alt="" /></Link> 
-            </nav>
-            <h1 className='img-description'>GYM</h1>
-         </div>
-         <div>
-            <nav>
-               <Link to='/yoga'><img className='workout-img' src="../../../public/yoga.jpg" alt="" /></Link>
-            </nav>
-            <h1 className='img-description'>YOGA</h1>
-         </div>
-         <div>
-            <nav>
-               <Link to='/aerobics'><img className='workout-img' src="../../../public/aerobics.jpg" alt="" /></Link>
-            </nav>
-            <h1 className='img-description'>AEROBICS</h1>
-         </div>
+         <WorkoutCard path={'/gym'} img={"../../../public/gym workout.jpg"} imgTitle={'GYM'} />
+         <WorkoutCard path={'/yoga'} img={"../../../public/yoga.jpg"} imgTitle={'YOGA'} />
+         <WorkoutCard path={'/aerobics'} img={"../../../public/aerobics.jpg"} imgTitle={'AEROBICS'} />
       </div>
-      <div className="note">
-         <p className='note-description'><b>NOTE : </b>{freeWorkout.freeWorkoutNote}</p>
-      </div>
+      <Note/>
     </>
  )   
 }

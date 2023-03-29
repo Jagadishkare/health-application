@@ -1,32 +1,18 @@
+import Note from './note'
 import './plan.css'
-import { Link } from "react-router-dom"
-import {plans} from '../../appliaction.json'
+import PlanLink from './planLink'
+import Title from './title'
 
 export default function Plans () {
     return (
         <>
-            <h1 className='plan-title'>PLANS FOR YOU</h1>
+            <Title/>
             <div className="plan-main-div">
-                <div>
-                    <nav>
-                        <Link to='/platinum'><img className='plan-img' src="../../../public/platinum.jpg" alt="" /></Link>
-                    </nav>
-                    <h1>Platinum membership</h1>
-                </div>
-                <div>
-                    <nav>
-                        <Link to='/gold'><img className='plan-img' src="../../../public/gold.jpg" alt="" /></Link>
-                    </nav>
-                    <h1>Gold membership</h1>
-                </div>
-                <div>
-                    <nav>
-                        <Link to='/silver'><img className='plan-img' src="../../../public/silver.jpg" alt="" /></Link>
-                    </nav>
-                    <h1>Silver membership</h1>
-                </div> 
+                <PlanLink imgPath={"../../../public/platinum.jpg"} membership={"Platinum membership"}/>
+                <PlanLink imgPath={"../../../public/gold.jpg"} membership={"Gold membership"}/>
+                <PlanLink imgPath={"../../../public/silver.jpg"} membership={"Silver membership"}/>
             </div>
-            <p className='discount'><b>NOTE : </b>{plans.note}</p>
+            <Note/>
         </>
     )
 }
