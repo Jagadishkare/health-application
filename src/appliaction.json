@@ -14,5 +14,8 @@
     },
     "plans" : {
         "note" : "We are offering 10% discount for new joiners."
-    } 
+    }, 
+    "url" : {
+        "serverUrl" : "http://localhost:3000/users" 
+    }
 }
