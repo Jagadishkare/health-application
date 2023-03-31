@@ -11,6 +11,7 @@ import Plans from './components/plans-components/Plans'
 import FreeWorkout from './components/free-workout-components/FreeWorkout'
 import SignIn from './components/sign-in-components/SignIn'
 import JoinUs from './components/join-us-comonents/JoinUs'
+import ForgotPassword from './components/sign-in-components/forgotPassword'
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
               <Route path='/platinum' Component={SignIn}/>
               <Route path='/gold' Component={SignIn}/>
               <Route path='/silver' Component={SignIn}/>
+              <Route path='/forgotPassword' Component={ForgotPassword}/>
             </Routes>
         </Router>
     </div>
