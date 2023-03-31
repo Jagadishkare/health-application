@@ -1,14 +1,14 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './sign-in.css'
-import IData from './signinType';
+import IData from './types/signinType';
+import Logo from './logo';
 import {url} from '../../appliaction.json'
+import UserInput from './userInput';
 let count :number = 0;
 
 export default function SignIn() {
-
     const [signInDetails , setSignInDetails] = useState({email:'', password:''})
-
     function handleUserDetails (event: React.FormEvent<HTMLFormElement>) {
 
         event.preventDefault();
@@ -26,7 +26,7 @@ export default function SignIn() {
                 res.map((elem:IData)=>{
                     if(newUser.userEmail===elem.userEmail){
                         if(newUser.userPassword===elem.userPassword){
-                            alert(`Welcome ${signInDetails.email} to FIT FOR LIFE....`);
+                            alert(` ${signInDetails.email} Welcome to FIT FOR LIFE....`);
                         }else{
                             alert("Wrong Password.....try again......");
                         }
@@ -43,16 +43,14 @@ export default function SignIn() {
     }
     return(
         <>
-            <img src="/public/logo.jpg" alt="" className="logo" />
+            <Logo/>
             <h1 className='heading'>SIGN-IN TO FIT FOR LIFE</h1>
-            <form onSubmit={(event)=>handleUserDetails(event)} action="">
-                <label className="label" htmlFor="email">EMAIL : </label>
-                <input className="inputs" autoComplete='off' name='email'onChange={(e)=>setSignInDetails({...signInDetails, email: e.target.value})} 
-                    placeholder="Enter email" type="email" value={signInDetails.email} /><br />
+            <form onSubmit={(event)=>handleUserDetails(event)}>
+                <UserInput content={"EMAIL : "} inputType={"email"} inputValue={signInDetails.email} inputPlaceholder={"Enter Email"} 
+                setFunction={(e)=>setSignInDetails({...signInDetails, email: e.target.value})}/><br/>
 
-                <label className="label" htmlFor="password">PASSWORD : </label>
-                <input className="inputs" autoComplete='off' name='password' value={signInDetails.password}
-                 placeholder="Enter password" type="password" onChange={(e)=>setSignInDetails({...signInDetails, password: e.target.value})}/><br />
+                <UserInput content={"PASSWORD : "} inputType={"password"} inputValue={signInDetails.password} inputPlaceholder={"Enter Password"} 
+                setFunction={(e)=>setSignInDetails({...signInDetails, password: e.target.value})}/><br/>
 
                 <button className='buttons'>sign in</button><br />
                 <Link to='/forgotPassword'><button className='buttons'>forgot password</button></Link>

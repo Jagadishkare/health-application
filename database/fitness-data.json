@@ -1,19 +1,9 @@
 {
   "users": [
     {
-      "userEmail": "jagadishkare11@gmail.com",
-      "userPassword": "1",
+      "userEmail": "jk@gmail.com",
+      "userPassword": "123",
       "id": 1
-    },
-    {
-      "userEmail": "jagadishkare112@gmail.com",
-      "userPassword": "12",
-      "id": 2
-    },
-    {
-      "userEmail": "gandhi@gmail.com",
-      "userPassword": "12",
-      "id": 3
     }
   ]
 }
