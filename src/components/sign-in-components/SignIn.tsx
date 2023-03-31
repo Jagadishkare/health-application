@@ -52,8 +52,10 @@ export default function SignIn() {
                 <UserInput content={"PASSWORD : "} inputType={"password"} inputValue={signInDetails.password} inputPlaceholder={"Enter Password"} 
                 setFunction={(e)=>setSignInDetails({...signInDetails, password: e.target.value})}/><br/>
 
-                <button className='buttons'>sign in</button><br />
-                <Link to='/forgotPassword'><button className='buttons'>forgot password</button></Link>
+                <button className='buttons'>SIGN IN</button><br />
+                <Link to='/forgotPassword'><button className='buttons'>FORGOT PASSWORD</button></Link>
+                
+                <Link to='/deleteAccount'><button className='delete-buttons'>DELETE ACCOUNT</button></Link>
             </form>
         </>
         )
