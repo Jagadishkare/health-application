@@ -9,6 +9,12 @@
     top: -40px;
     left: 470px;
 }
+.delete-heading{
+    display: inline;
+    position: relative;
+    top: -40px;
+    left: 250px;
+}
 .logo{
     height: 100px;
 }
@@ -24,6 +30,6 @@
 }
 .delete-buttons{
     position: absolute;
-    right: 20px;
-    bottom: 20px;
+    right: 30px;
+    bottom: 30px;
 }

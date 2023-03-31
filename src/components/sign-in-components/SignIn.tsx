@@ -55,7 +55,7 @@ export default function SignIn() {
                 <button className='buttons'>SIGN IN</button><br />
                 <Link to='/forgotPassword'><button className='buttons'>FORGOT PASSWORD</button></Link>
                 
-                <button className='delete-buttons'>DELETE ACCOUNT</button><br />
+                <Link to='/deleteAccount'><button className='delete-buttons'>DELETE ACCOUNT</button></Link>
             </form>
         </>
         )

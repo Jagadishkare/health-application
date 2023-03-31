@@ -12,6 +12,7 @@ import FreeWorkout from './components/free-workout-components/FreeWorkout'
 import SignIn from './components/sign-in-components/SignIn'
 import JoinUs from './components/join-us-comonents/JoinUs'
 import ForgotPassword from './components/sign-in-components/forgotPassword'
+import DeleteAccount from './components/sign-in-components/deleteAccount'
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               <Route path='/gold' Component={SignIn}/>
               <Route path='/silver' Component={SignIn}/>
               <Route path='/forgotPassword' Component={ForgotPassword}/>
+              <Route path='/deleteAccount' Component={DeleteAccount}/>
             </Routes>
         </Router>
     </div>
