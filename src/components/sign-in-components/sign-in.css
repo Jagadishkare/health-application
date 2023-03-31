@@ -16,9 +16,14 @@
     margin-top: 30px;
     margin-left: 500px;
 }
-.buttons{
+.buttons,.delete-buttons{
     height: 40px;
     width: 300px;
     margin-top: 20px;
     margin-left: 650px;
+}
+.delete-buttons{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
 }
